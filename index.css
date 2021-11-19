@@ -9,15 +9,15 @@ body{
     background-color: grey;
   }
 
-  .clicked{
-    color:#7f8c8d;
-  }
+.clicked{
+  color:#7f8c8d;
+}
 
-  .from,
-  .greetings{
-    display: none;
-  }
-  
-  .showing{
-    display: block;
-  }
+.from,
+.greetings{
+  display: none;
+}
+
+.showing{
+  display: block;
+}
