@@ -6,7 +6,7 @@ const USER_LS ="currentUser",
 SHOWING_CN = "showing";
 
 function saveName(text){
-    localStorage.setItem(USER_LS,TEXT);
+    localStorage.setItem(USER_LS,text);
 }
 
 function handleSubmit(event){
@@ -14,7 +14,7 @@ function handleSubmit(event){
     const currnetValue = input.value;
     paintGreeting(currnetValue); 
     saveName(currnetValue);
-}
+} 
 
 function askForName(){
     form.classList.add(SHOWING_CN);
@@ -24,10 +24,12 @@ function askForName(){
 
 
 function paintGreeting(text){
-    console.log("paint");
+    //form = document.querySelector(".js-form")
     form.classList.remove(SHOWING_CN);
+    // greeting = document.querySelector(".js-greetings");
     greeting.classList.add(SHOWING_CN);
     greeting.innerText =`hello ${text}`;
+
 }
 function loadName(){
     const currentUser = localStorage.getItem(USER_LS);
