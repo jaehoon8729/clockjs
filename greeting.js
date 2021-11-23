@@ -28,7 +28,7 @@ function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
     // greeting = document.querySelector(".js-greetings");
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText =`hello ${text}`;
+    greeting.innerText =`Hello ${text}`;
 
 }
 function loadName(){
