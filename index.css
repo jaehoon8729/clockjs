@@ -10,7 +10,7 @@ body{
 }
 
 h1{
-  font-size: 50px;
+  font-size: 100px;
   color: black;
   -webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: white;
@@ -61,4 +61,10 @@ span{
   height: 100%;
   z-index: -1;
   animation: fadeIn .5s linear;
+}
+
+.mobile{
+  display: grid;
+  place-items: center;
+  min-height: 1vh;
 }
