@@ -9,6 +9,13 @@ body{
     background-color: grey;
 }
 
+input{
+  height:30px;
+  font-size:15px;
+  background-color: white;
+  background-position: 10px 10px;
+}
+
 h1{
   font-size: 50px;
   color: black;
