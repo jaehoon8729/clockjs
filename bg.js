@@ -20,7 +20,7 @@ function paintImage(imgNumber){
     if( is_mobile ) {
         image.src = `./mbImages/${imgNumber + 1}.jpg`;
     }else{
-        image.src = `./mbImages/${imgNumber + 1}.jpg`;
+        image.src = `./pcImages/${imgNumber + 1}.jpg`;
     }
     image.classList.add("bgImage");
     body.prepend(image);
