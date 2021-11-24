@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 
 const IMG_NUMBER=3;
+
 var is_mobile = isMobile();
 
 function isMobile() { 
