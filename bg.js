@@ -10,6 +10,7 @@ function paintImage(imgNumber){
         image.src = `./pcImages/${imgNumber + 1}.jpg`;
     }
     image.classList.add("bgImage");
+    image.style.width="100%";
     body.prepend(image);
 }
 
