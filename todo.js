@@ -28,6 +28,11 @@ function paintToDo(text){
     const newId = toDos.length + 1;
     delBtn.innerText = "X";
     delBtn.addEventListener("click",deleteToDo);
+    if(is_mobile){
+        delBtn.style.fontSize="60px"
+        li.style.fontSize="50px";
+        span.style.fontSize="80px";
+    }
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
@@ -60,6 +65,11 @@ function loadToDos(){
 
 function init(){
     loadToDos();
+    if(is_mobile){
+        toDoInput.style.height="60px";
+        toDoInput.style.fontSize="40px";
+        toDoInput.style.backgroundPosition="60px 50px";
+    }
     toDoForm.addEventListener("submit", handleSubmit);
 }
 init();
